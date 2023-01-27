@@ -16,14 +16,10 @@ function Landing() {
             <div className="!bg-[#0C102D]">
                 <Header/>
                 <div className="relative w-[100%]">
-                    {/*<div className="absolute top-0 left-0 w-[100%]">*/}
-                    {/*    <img src={require('../../images/background.png')} className="pt-[50px] w-[100%] z-[1000]"/>*/}
-                    {/*</div>*/}
-                    {/**/}
                     <img src={require('../../images/background.png')} className="pt-[50px] w-[100%]"/>
                     <div className="absolute top-0 left-0 ">
-                        <Home />
-                        <About />
+                        <Home/>
+                        <About/>
                         <Technologies/>
                         <Steps/>
                         <Questions/>
@@ -33,11 +29,6 @@ function Landing() {
                         <Footer/>
                     </div>
                 </div>
-
-
-
-                {/*<NoPage />*/}
-
             </div>
         </div>
     );

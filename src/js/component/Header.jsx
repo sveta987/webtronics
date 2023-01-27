@@ -2,7 +2,7 @@ import React, {useState} from 'react'
 import {Outlet, Link} from "react-router-dom";
 
 export default function Header() {
-    const [toggleMenu,setToggleMenu] = useState(false)
+    const [toggleMenu, setToggleMenu] = useState(false)
     const handleClickScroll = (componentName) => {
         setToggleMenu(false);
         const element = document.getElementById(componentName);
@@ -17,13 +17,14 @@ export default function Header() {
                         <div className="flex flex-wrap justify-between items-center mx-auto max-w-screen-xl">
                             <Link to="#home"
                                   onClick={() => handleClickScroll("home")}
-                            ><img src={require('../../images/logo.png')} className="cursor-pointer max-md:w-[300px]"/>
+                            ><img src={require('../../images/logo.png')}
+                                  className="cursor-pointer max-md:w-[300px] max-sm:w-[150px]"/>
 
                             </Link>
                             <button
                                 className="navbar-burger flex items-center text-white p-3 lg:hidden"
-                                onClick={()=>setToggleMenu(!toggleMenu)}>
-                                <svg className="block w-[50px] fill-current" viewBox="0 0 20 20"
+                                onClick={() => setToggleMenu(!toggleMenu)}>
+                                <svg className="block w-[50px] max-sm:w-[30px] fill-current" viewBox="0 0 20 20"
                                      xmlns="http://www.w3.org/2000/svg">
                                     <title>Mobile menu</title>
                                     <path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z"></path>
@@ -32,7 +33,7 @@ export default function Header() {
                             <div
                                 className={`justify-between items-center max-md:bg-[#0C102D] text-white w-full lg:flex lg:w-auto lg:order-1 !text-white ${toggleMenu ? "" : "hidden"}`}
                                 id="mobile-menu-2">
-                                <ul className="flex flex-col mt-4 font-medium lg:flex-row lg:space-x-8 lg:mt-0 ">
+                                <ul className="flex flex-col mt-4 font-medium lg:flex-row lg:space-x-8 lg:mt-0">
                                     <li>
                                         <Link to="#about"
                                               onClick={() => handleClickScroll("about")}
@@ -69,15 +70,11 @@ export default function Header() {
                                     </li>
                                 </ul>
                             </div>
-
                         </div>
                     </nav>
                 </div>
-
                 <Outlet/>
             </header>
-
         </>
-
     )
 }

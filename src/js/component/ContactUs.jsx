@@ -1,4 +1,4 @@
-import React, { useState} from 'react';
+import React, {useState} from 'react';
 import axios from "axios";
 
 function ContactUs() {
@@ -49,8 +49,9 @@ function ContactUs() {
                         <p>
                             Do you have any kind of help please contact with us.
                         </p>
-                        <div className="text-white p-[100px]">
-                            <div className="flex flex-col justify-center mx-[25%] max-md:mx-[5%] max-md:text-[2xl]">
+                        <div className="text-white p-[100px] max-sm:!px-[15px]">
+                            <div
+                                className="flex flex-col justify-center mx-[25%] max-md:mx-[5%] max-sm:mx-0 max-md:text-[2xl]">
                                 <div className="border-gradient my-[5px] max-md:my-[15px]">
                                     <input type="text " id="name" placeholder="Name"
                                            className="py-[10px] pl-[10px] rounded-xl z-[30] bg-[#252842] w-[100%] max-md:py-[20px]"
@@ -77,8 +78,9 @@ function ContactUs() {
                         </div>
                     </div>
                 </div>
-                </div>
+            </div>
         </div>
     );
 }
+
 export default ContactUs;

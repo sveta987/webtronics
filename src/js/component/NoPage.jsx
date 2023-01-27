@@ -1,5 +1,5 @@
 import React from 'react';
-import { Outlet, Link } from "react-router-dom";
+import {Link} from "react-router-dom";
 
 function NoPage() {
     return (
@@ -10,7 +10,9 @@ function NoPage() {
                     <div className="flex flex-col">
                         <h2>Oh man!</h2>
                         <h4>We think that You are lost on Cyberspace</h4>
-                        <Link to="/" className="rounded-[8px] mt-[50px] ml-[50px] px-[32px] py-[24px] bg-gradient-to-r from-[#27F9E5] to-[#2FFFCD] w-[288px] h-[72px] shadow-lg text-[#0A1482] text-center text-[20px]">Go home</Link>
+                        <Link to="/"
+                              className="rounded-[8px] mt-[50px] ml-[50px] px-[32px] py-[24px] bg-gradient-to-r from-[#27F9E5] to-[#2FFFCD] w-[288px] h-[72px] shadow-lg text-[#0A1482] text-center text-[20px]">Go
+                            home</Link>
                     </div>
                 </div>
             </div>

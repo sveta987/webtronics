@@ -7,6 +7,7 @@ function SingleQuestion({question}) {
     function openAccordion() {
         setActive(!active)
     }
+
     return (
         <>
             <div className="border-gradient my-[24px] cut-two-angles" onClick={openAccordion}>
@@ -22,4 +23,5 @@ function SingleQuestion({question}) {
         </>
     );
 }
+
 export default SingleQuestion;
